@@ -1,0 +1,7 @@
+{
+  "name": "AppBeasiswa",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

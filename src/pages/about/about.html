@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-navbar color="dongker">
+    <ion-title><b>ABOUT</b></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides autoplay="5000" loop="true" speed="3000" id="image_slide">
+    <ion-slide *ngFor="let slide of slideData">
+      <img src="{{slide.image}}" />
+    </ion-slide>
+  </ion-slides>
+  <br>
+  <ion-content>
+    <div id="ion-text-wrap">
+    <p>
+      <b>Pendahuluan</b>
+    </p>
+    <p> Situs ini hadir dalam rangka memberikan kemudahan bagi seluruh mahasiswa Politeknik Negeri
+      Batam untuk mengajukan dan memperoleh kesempatan mendapatkan beasiswa. Beasiswa merupakan suatu bentuk
+      penghargaan atau bantuan yang sifatnya tidak mengikat dan atau mengikat yang diberikan kepada mahasiswa yang
+      memenuhi kriteria yang disyaratkan Politeknik Negeri Batam.
+    </p>
+    <p> Tujuan pemberian beasiswa yaitu:</p>
+    <ol>
+      <li>Meningkatkan motivasi bagi mahasiswa dalam mengikuti proses pembelajaran
+      </li>
+      <li>Memberikan apresiasi atas prestasi baik akademik maupun non-akademik yang dicapai
+        </li>
+      <li>Memberikan bantuan biaya pendidikan bagi yang memiliki keterbatasan finansial
+        </li>
+    </ol>
+    <p>
+      <b>Jenis Beasiswa</b>
+    </p>
+    <p> Secara umum kategori beasiswa yang ditawarkan terbagi atas dua kategori utama yaitu:</p>
+    <b>1. Beasiswa Prestasi</b>
+    <p>Beasiswa diberikan sebagai bentuk penghargaan atas prestasi akademik dan non-akademik 
+      mahasiswa. Yang termasuk jenis beasiswa prestasi adalah:
+    </p>
+    <ul class="my-nav">
+      <li>Beasiswa Peningkatan Prestasi Akademik (PPA)</li>
+      <li>Beasiswa Prestasi Non-Akademik Swadana</li>
+      <li>Beasiswa Prestasi dari Pemprov</li>
+      <li>Beasiswa Prestasi dari Industri (seperti beasiswa ATB, dll</li>
+    </ul>
+    <p>Syarat umum untuk dapat mengajukan beasiswa prestasi adalah:</p>
+    <ul class="my-nav">
+      <li>IPK ≥ 3,00 khusus untuk pengajuan berdasarkan prestasi akademik</li>
+      <li>mendapat peringkat 1-3 pada pertandingan/perlombaan minimal di tingkat regional/wilayah, 
+        khusus untuk pengajuan berdasarkan prestasi non akademik</li>
+      <li>menyertakan fotocopy halaman depan buku tabungan yang berisi nomor rekening</li>
+    </ul>
+    <b>2. Beasiswa Tidak Mampu</b>
+      <p>Beasiswa diberikan sebagai bentuk bantuan belajar terhadap mahasiswa yang memiliki 
+        keterbatasan atau ketidakmampuan dari sisi ekonomi. Yang termasuk jenis beasiswa
+        tidak mampu adalah:
+      </p>
+      <ul class="my-nav">
+        <li>Beasiswa Bantuan Belajar Mahasiswa (BBM)</li>
+        <li>Beasiswa Tidak Mampu dari Pemprov</li>
+        </ul>
+      <p>Syarat umum untuk dapat mengajukan beasiswa prestasi adalah:</p>
+      <ul class="my-nav">
+        <li>IPK ≥ 2,50</li>
+        <li>menyertakan surat keterangan tidak mampu dari kelurahan/kecamatan</li>
+        <li>menyertakan fotocopy halaman depan buku tabungan yang berisi nomor rekening</li>
+      </ul>
+      <b>Syarat Pengajuan dan Seleksi Penerimaan Beasiswa</b>
+      <p>Persyaratan administratif untuk mahasiswa yang mengajukan permohonan beasiswa adalah:</p>
+      <ul class="my-nav">
+        <li>terdaftar sebagai mahasiswa aktif pada semester berjalan dan menunjukkan Kartu Tanda Mahasiswa 
+          (KTM) yang berlaku;
+        </li>
+        <li>memiliki IPK yang memenuhi syarat yang ditetapkan untuk setiap jenis beasiswa;</li>
+        <li>tidak sedang atau mengambil cuti akademik;</li>
+        <li>tidak terkena kasus atau sanksi akademik dan/atau administratif;</li>
+        <li>aktif dalam kegiatan kemahasiswaan, sebagai nilai tambah;</li>
+        <li>dilaksanakan sesuai jadwal, prosedur dan ketentuan yang berlaku;</li>
+        <li>seleksi dilakukan oleh tim Beasiswa Politeknik Negeri Batam;</li>
+        <li>khusus untuk seleksi penerima beasiswa prestasi akademik, bobot penilaian 
+          terbesar adalah besaran IPK mahasiswa terakhir;
+        </li>
+        <li>khusus untuk seleksi penerima beasiswa tidak mampu, dilakukan juga tes wawancara 
+          kepada calon penerima;
+        </li>
+        <li>tidak/sedang atau belum menerima  beasiswa dari pihak manapun.</li>
+      </ul>
+    <b>Mekanisme Pencairan Beasiswa</b>
+    <ul class="my-nav">
+      <li>Besaran dan jangka waktu beasiswa tergantung jenis dan sumber dana beasiswa</li>
+      <li>Pada prinsipnya, beasiswa dicairkan melalui transfer langsung ke rekening mahasiswa 
+        penerima beasiswa.
+      </li>
+      <li>Biaya transfer yang dikenakan pihak Bank dipotong dari beasiswa yang ditransfer.</li>
+      <li>Ketidaklengkapan data mengenai nomor rekening atas kelalaian penerima beasiswa yang mengakibatkan 
+        beasiswa gagal dicairkan, menjadi tanggung jawab penerima beasiswa.
+      </li>
+    </ul>
+    <b>Hak dan Kewajiban Sebagai Penerima Beasiswa</b>
+    <ul class="my-nav">
+      <li>Setelah berakhirnya periode satu tahun pemberian beasiswa, penerima beasiswa dapat mengajukan 
+        permohonan kembali beasiswa untuk periode tahun berikutnya selama memenuhi kriteria dan persyaratan 
+        yang ditetapkan.
+      </li>
+      <li>Penerima beasiswa harus bersedia mengikuti berbagai kegiatan Politeknik Negeri Batam.</li>
+    </ul>
+    <b>Penghentian Beasiswa</b>
+    <p>Beasiswa dapat dihentikan apabila:</p>
+    <ul class="my-nav">
+      <li>Penerima beasiswa melanggar ketentuan atau peraturan/tata tertib yang berlaku di 
+        Republik Indonesia dan Politeknik Negeri Batam;
+      </li>
+      <li>Penerima beasiswa tidak terdaftar sebagai mahasiswa aktif pada semester berikutnya;</li>
+      <li>Terbukti data permohonan beasiswa tidak diisi secara benar;</li>
+      <li>Prestasi akademik penerima beasiswa menurun.</li>
+    </ul>
+    </div>
+  </ion-content>

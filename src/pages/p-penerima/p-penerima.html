@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="dongker">
+    <ion-title id="center">Pengumuman Penerimaan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+      <div id="tabel">
+        <ion-row>
+            <ion-col>
+                No.
+            </ion-col>
+            <ion-col>
+                Nama
+            </ion-col>
+            <ion-col>
+                NIM
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                
+            </ion-col>
+            <ion-col>
+                
+            </ion-col>
+            <ion-col *ngFor="let beasiswa of nim">
+                {{beasiswa.nim}}
+            </ion-col>
+        </ion-row>
+      </div>
+      </ion-grid>
+</ion-content>

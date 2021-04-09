@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar color="dongker" id="center">
+    <br>
+    <ion-avatar>
+      <img style="width: 70px; height: 70px" src="./assets/icon/polibatam_white.png" id="center-logo">
+    </ion-avatar>
+    Polibatam Scholarship
+    <br>
+    <br>
+  </ion-navbar>
+</ion-header>
+
+<ion-content id="bg-image">
+  <ion-slides autoplay="5000" loop="true" speed="3000" id="image_slide">
+    <ion-slide *ngFor="let slide of slideData">
+      <img src="{{slide.image}}" />
+    </ion-slide>
+  </ion-slides>
+  <br>
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <button ion-button full (click)="daftarBeasiswa()" color="dongker" id="long">Daftar<br>Beasiswa</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button full (click)="dataPribadi()" color="dongker" id="long">Data<br>Pribadi</button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <button ion-button full (click)="pPenerima()" color="dongker" id="long">Pengumuman<br>Penerimaan</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button full (click)="about()" color="dongker" id="long">About</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  <ion-grid>   
+        <ion-row>
+          <ion-col id="center-status">
+            <b>Status</b>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <button full color="dongker" id="status">Diajukan<br><h3><b>100%</b></h3></button>
+          </ion-col>
+          <ion-col>
+            <button full color="dongker" id="status">DisetujuI Dosen Wali<br><h3><b>100%</b></h3></button>
+          </ion-col>
+          <ion-col>
+            <button full color="dongker" id="status">Disetujui BAK<br><h3><b>100%</b></h3></button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
+  <ion-grid>   
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <button ion-button round (click)="logout()" color="danger">Log Out</button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </div>
+</ion-content>

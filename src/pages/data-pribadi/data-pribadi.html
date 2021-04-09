@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar color="dongker">
+    <ion-title id="center_text">Data Pribadi</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div id="container">
+
+    <ion-avatar>
+      <img src="./assets/icon/hadi.jpg" id="bulat">
+    </ion-avatar>
+    <br>
+    <br>
+    <br>
+
+    <ion-item>
+        <ion-label color="dongker" floating>Nama</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label *ngFor="let beasiswa of (beasiswa | async)?.results" color="dongker" floating>NIM</ion-label>
+        <ion-input>{{beasiswa.nim}}</ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="dongker" floating>Tempat Lahir</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="dongker" floating>Tanggal Lahir</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating" color="dongker">Jenis Kelamin:</ion-label>
+        <ion-select>
+          <ion-option>Laki-laki</ion-option>
+          <ion-option>Perempuan</ion-option>
+          <ion-option>Tidak Diketahui</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="dongker" fixed>Alamat</ion-label>
+        <ion-textarea placeholder="Alamat Lengkap" rows="3"></ion-textarea>
+    </ion-item>
+    <ion-item>
+        <ion-label color="dongker" floating>Kode Pos</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col></ion-col>
+            <ion-col></ion-col>
+            <ion-col>
+                <button ion-button round (click)="submit()" color="dongker">Submit</button>
+            </ion-col>
+            <ion-col></ion-col>
+            <ion-col></ion-col>
+          </ion-row>
+        </ion-grid>
+  </div>
+</ion-content>

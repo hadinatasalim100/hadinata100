@@ -1,0 +1,22 @@
+page-daftar-beasiswa {
+    #container {
+        width: 300px; 
+        margin-left:auto; 
+        margin-right: auto; 
+    }
+
+    #long {
+        font-size: 18px;
+        border-radius: 10px;
+        width: 130px;
+        height: 130px;
+        box-shadow:
+            0px 0px 20px rgb(119, 198, 243),
+    }
+
+    #shadow {
+        border-radius: 10px;
+        box-shadow:
+            0px 0px 20px rgb(119, 198, 243),
+    }
+}
